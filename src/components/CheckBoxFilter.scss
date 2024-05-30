@@ -4,7 +4,7 @@
   background-color: $colorBgWhite;
   border-radius: 5px;
   width: 232px;
-  box-shadow: 0px 2px 8px 0px $colorBoxShadow;
+  box-shadow: 0 2px 8px 0 $colorBoxShadow;
   height: 252px;
 }
 
@@ -22,13 +22,16 @@
   height: 40px;
   padding: 0 0 0 20px;
 }
+
 .check__item {
   width: 100%;
+
   :hover {
-    cursor: url(../img/icons/Cursor.svg), auto;
+    cursor: url("../img/icons/Cursor.svg"), auto;
     background-color: $colorHover;
   }
 }
+
 .check__input {
   position: absolute;
   -webkit-appearance: none;
@@ -39,11 +42,11 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(../img/icons/Form.svg);
+  background-image: url("../img/icons/Form.svg");
 }
 
 .check__input:checked + .check__box {
-  background-image: url(../img/icons/Checkbox.svg);
+  background-image: url("../img/icons/Checkbox.svg");
 }
 
 .check__title {

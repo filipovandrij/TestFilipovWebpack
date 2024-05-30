@@ -1,0 +1,72 @@
+@import "../styles/variables";
+
+.ticked-card {
+  width: 462px;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: $colorBgWhite;
+  box-shadow: 0 2px 8px 0 $colorBoxShadow;
+  gap: 10px;
+
+  div {
+    display: flex;
+  }
+}
+
+.ticked-card__title-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    color: $colorShowText;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.ticked-card__subblock-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subblock-info__info-block {
+  margin: 10px 0 0;
+  width: 141px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticked-card__suptitle {
+  text-transform: uppercase;
+  color: $colorSubText;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+
+.ticked-card__value {
+  color: $colorText;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.show-more-button {
+  width: 502px;
+  height: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: $colorShowText;
+  border: none;
+  border-radius: 5px;
+  color: $colorWhiteText;
+  cursor: url("../img/icons/Cursor.svg"), auto;
+}

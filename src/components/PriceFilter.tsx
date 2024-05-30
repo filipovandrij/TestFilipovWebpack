@@ -7,24 +7,24 @@ type Props = {
 
 export default function PriceFilter({ sort, setSort }: Props) {
   return (
-    <div className="sort-buttons">
+    <div className="sort-buttons-container">
       <button
         className={sort === "price" ? "active" : ""}
         onClick={() => setSort("price")}
       >
-        Most affordable
+        Найдешевший
       </button>
       <button
         className={sort === "time" ? "active" : ""}
         onClick={() => setSort("time")}
       >
-        Fastest
+        Найшвидший
       </button>
       <button
         className={sort === "optimal" ? "active" : ""}
         onClick={() => setSort("optimal")}
       >
-        Optimal
+        ОптимальнИй
       </button>
     </div>
   );

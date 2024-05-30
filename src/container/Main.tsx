@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CheckBoxFilter from "../components/CheckBoxFilter";
 import ListOfTickets from "../components/ListOfTickets";
+import "./Main.scss";
 
 type Props = {};
 
@@ -15,15 +16,10 @@ export default function Main({}: Props) {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          gap: "10px",
-        }}
-      >
+      <main className="main">
         <CheckBoxFilter filters={filters} setFilters={setFilters} />
         <ListOfTickets filters={filters} />
-      </div>
+      </main>
     </>
   );
 }
