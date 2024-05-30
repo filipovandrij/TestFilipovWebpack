@@ -1,9 +1,12 @@
+import Header from "./container/Header";
+import Main from "./container/Main";
 import "./styles/style.scss";
 
 export const App = () => {
   return (
     <>
-      <h1>Hello</h1>
+      <Header />
+      <Main />
     </>
   );
 };
