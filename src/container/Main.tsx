@@ -1,9 +1,18 @@
+import { useState } from "react";
 import CheckBoxFilter from "../components/CheckBoxFilter";
 import ListOfTickets from "../components/ListOfTickets";
 
 type Props = {};
 
 export default function Main({}: Props) {
+  const [filters, setFilters] = useState({
+    all: false,
+    nonStop: false,
+    oneStop: false,
+    twoStops: false,
+    threeStops: false,
+  });
+
   return (
     <>
       <div
@@ -12,8 +21,8 @@ export default function Main({}: Props) {
           gap: "10px",
         }}
       >
-        <CheckBoxFilter />
-        <ListOfTickets />
+        <CheckBoxFilter filters={filters} setFilters={setFilters} />
+        <ListOfTickets filters={filters} />
       </div>
     </>
   );
